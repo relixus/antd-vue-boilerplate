@@ -1,7 +1,5 @@
 <template>
-  <router-view></router-view>
+    HEADER
 </template>
-
 <script setup>
-
 </script>

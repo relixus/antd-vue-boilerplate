@@ -1,4 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import 'ant-design-vue/dist/antd.css';
+import { registerPlugins } from './plugins';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+registerPlugins(app);
+
+app.mount('#app');
+
+
