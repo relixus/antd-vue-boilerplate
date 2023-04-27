@@ -1,7 +1,8 @@
 import axios from "axios";
+import {showNotificationError} from './interceptor_feedback.js'
 
 var http = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE,
+    baseURL: process.env.VUE_APP_API_BASE_URL,
     headers: {
       "Content-type": "application/json"
     }
@@ -14,14 +15,7 @@ var http = axios.create({
   }, function (error) {
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
-    console.log(error.response.status);
-    if(error.response.status == 400){
-        
-    }
-
-    if(error.response.status == 500){
-      
-    }
+    showNotificationError(error)
     return Promise.reject(error);
   });
 

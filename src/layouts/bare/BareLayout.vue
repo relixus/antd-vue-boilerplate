@@ -20,7 +20,7 @@ import ViewLayout from '@/layouts/default/ViewLayout.vue';
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700'); */
 
 * {
     margin: 0px;

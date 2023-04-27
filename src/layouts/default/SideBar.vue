@@ -1,5 +1,6 @@
 <template>
     <a-menu theme="dark" mode="inline">
+       
         <a-menu-item key="home">
             <router-link :to="{ name: 'Home' }">
                 <home-outlined />
@@ -18,3 +19,5 @@
 <script setup>
 import { HomeOutlined, InfoCircleOutlined } from '@ant-design/icons-vue';
 </script>
+
+<style></style>

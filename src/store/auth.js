@@ -14,7 +14,7 @@ export const useAuthStore = defineStore({
     actions: {
         attemptLogIn(user) {
             if(user.username == "admin"){
-                this.user = user;
+                this.user = { ...user, fullname: "Administrator"};
                 return { success: true, message: "Login successful" }
             } else {
                 return { success: false, message: "Invalid username or password"}
